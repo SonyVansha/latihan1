@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Perubahan dari feature/1
+=======
+Perubahan dari feature/2
+>>>>>>> feature/2
