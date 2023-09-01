@@ -29,60 +29,75 @@
             <h3>BLITAR 66181</h3>
         </div>
     </header>
-    <hr>
+
+    <hr style="border: 2px solid grey;">
     
-    <form action="coba" class="formulir">
-        <h4>Formulir Pendidikan</h4>
+    <form action="php/data_siswa.php" class="formulir" method="POST">
+        <h4>
+            <center>
+                Formulir Pendaftaran Siswa Baru (PPDB)
+                <br>
+                SMK Negeri 1 Nglegok
+            </center>
+        </h4>
+        <br>
+        <!-- Data Diri mu -->
         <p>
-            Nama :
+            <label for="nama">Nama</label> :
             <input type="text" name="nama">
         </p>
         <p>
-            Tgl Lahir :
+            <label for="tanggal_lahir">Tgl Lahir</label> :
             <input type="date" name="tanggal">
         </p>
         <p>
-            NISN :
+            <label for="no_nisn">NISN</label> :
             <input type="number" name="nisn">
         </p>
         <p>
-            Asal SMP :
+            <label for="asal_smp">Asal SMP</label> :
             <input type="text" name="asal">
         </p>
         <p>
-            Alamat :
+            <label for="alamat">Alamat</label> :
             <input type="text" name="alamat">
         </p>
         <p>
-            Nama ayah :
+            <label for="nama_ayah">Nama ayah</label> :
             <input type="text" name="nama_ayah">
         </p>
         <p>
-            Nama Ibu :
+            <label for="nama_ibu">Nama Ibu</label> :
             <input type="text" name="nama_ibu">
         </p>
         <p>
-            Email :
+            <label for="email">Email</label> :
             <input type="email" name="email">
         </p>
+
+        <!-- Pilihan Jurusan Industri  -->
         <p>
-            Pilih Jurusan :
-            <select name="Jurusan" value="Nama_Jurusan">
-                <option value="pilih">Nama Jurusan</option>
-                <option value="tkj">TKJ</option>
-                <option value="tkro">TKRO</option>
-                <option value="tei">TEI</option>
+            <label for="pilih_jurusan">Pilih Jurusan</label> :
+            <select name="jurusan" value="Nama_Jurusan">
+                <option value="pilih" align="center">--- Nama Jurusan ---</option>
+                <option value="tkj">Teknik Komputer dan Jaringan</option>
+                <option value="tkro">Teknik Kendaraan Ringan dan Otomotif</option>
+                <option value="tei">Teknik Elektronika Industri</option>
+                <option value="jb">Jasa Boga</option>
+                <option value="akl">Akuntansi dan Keuangan Lembaga</option>
+                <option value="tbsm">Teknik dan Bisnis Sepeda Motor </option>
             </select>
         </p>
-        <p>
-            Deskripsi Diri :
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <!-- Tentang Diri sendiri -->
+        <p class="deskripsi_diri">
+            <label for="deskripsi_diri">Deskripsi Diri</label> : 
+            <textarea name="data_diri" placeholder="Masukan Deskripsi tentang dirimu"></textarea>
         </p>
         <br>
         <p>Saya menyatakan bahwa data yang diisikan adalah benar dan bersedia menanggung konsekuensi jika 
             tidak sesuai.</p>
-        <input type="button" value="Submit" class="submit">
+        <input type="submit" value="Submit" class="submit">
     </form>
-    
 </body>
 </html>
