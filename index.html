@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    
+    <header>
+        <img src="img/jawa timur.png" alt="Logo jawir" class="logo">
+        <div class="judul">
+            <h1>PEMERINTAH PROVINSI JAWA TIMUR
+                <br>
+                DINAS PENDIDIKAN
+                <br>
+                SEKOLAH MENENGAH KEJURUAN NEGERI 1 NGLEGOK
+                
+            </h1>
+
+
+            <!-- <h1>DINAS PENDIDIKAN</h1> -->
+            <!-- <h1>SEKOLAH MENENGAH KEJURUAN NEGERI 1 NGLEGOK</h1> -->
+            <h3>Jl. Penataran No. 1 Telp/Fax (0342) 561355 email:smkn1_nglegok@yahoo.com</h3>
+            <h3>BLITAR 66181</h3>
+        </div>
+    </header>
+    <hr>
+    
+    <form action="coba" class="formulir">
+        <h4>Formulir Pendidikan</h4>
+        <p>
+            Nama :
+            <input type="text" name="nama">
+        </p>
+        <p>
+            Tgl Lahir :
+            <input type="date" name="tanggal">
+        </p>
+        <p>
+            NISN :
+            <input type="number" name="nisn">
+        </p>
+        <p>
+            Asal SMP :
+            <input type="text" name="asal">
+        </p>
+        <p>
+            Alamat :
+            <input type="text" name="alamat">
+        </p>
+        <p>
+            Nama ayah :
+            <input type="text" name="nama_ayah">
+        </p>
+        <p>
+            Nama Ibu :
+            <input type="text" name="nama_ibu">
+        </p>
+        <p>
+            Email :
+            <input type="email" name="email">
+        </p>
+        <p>
+            Pilih Jurusan :
+            <select name="Jurusan" value="Nama_Jurusan">
+                <option value="pilih">Nama Jurusan</option>
+                <option value="tkj">TKJ</option>
+                <option value="tkro">TKRO</option>
+                <option value="tei">TEI</option>
+            </select>
+        </p>
+        <p>
+            Deskripsi Diri :
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </p>
+        <br>
+        <p>Saya menyatakan bahwa data yang diisikan adalah benar dan bersedia menanggung konsekuensi jika 
+            tidak sesuai.</p>
+        <input type="button" value="Submit" class="submit">
+    </form>
+    
+</body>
+</html>

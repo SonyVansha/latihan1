@@ -1,0 +1,23 @@
+header {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Gambar logo */
+.logo {
+    /* ukuran logo */
+    width: 110px;
+    height: 100%;
+    /*  */
+    padding-top: 20px;
+}
+
+/* Judul nya pemerintah jawir */
+.judul {
+    font-size: 15px;
+    text-align: center;
+    margin-left: 20px;
+}
+
